@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Veterinary Clinic</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+
+<!-- header section starts  -->
+
+    <header class="header fixed-top">
+
+        <div class="container">
+    
+        <div class="row align-items-center justify-content-between">
+    
+            <a href="#home" class="logo">Pet and<span> Vet.</span></a>
+    
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#contact">contact</a>
+            </nav>
+    
+            <a href="#contact" class="link-btn">make appointment</a>
+    
+            <div id="menu-btn" class="fas fa-bars"></div>
+    
+        </div>
+    
+        </div>
+    
+    </header>
+    
+<!-- header section ends  -->
+
+    <section class="home" id="home">
+
+        <div class="container">
+    
+        <div class="row min-vh-100 align-items-center">
+            <div class="content text-center text-md-left">
+                <h3>Taking care of your pets is our #1 priority.</h3>
+                <p>Being a responsible pet owner means making sure that your pet is happy and healthy. Let us help you with that.</p>
+                <a href="#contact" class="link-btn">make appointment</a>
+            </div>
+        </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+    
+        <div class="row align-items-center">
+    
+            <div class="col-md-6 image">
+                <img src="https://safehavensforpets.org/d/img/uploads/istock-1142921675_optimized.jpg" class="w-100 mb-5 mb-md-0" alt="">
+            </div>
+    
+            <div class="col-md-6 content">
+                <span>about us</span>
+                <h3>Our Mission - True Healthcare For Your Pets</h3>
+                <p>We make veterinary house calls! Our mobile vet staff is committed to providing your beloved companion animals with the highest quality of care in the most stress-free environment - your own home! Every staff member is Fear Free Certified, so you can rest assured your companion will be treated with the same gentle care we give our own pets.
+
+                    We know that taking your companion to a veterinary office can be stressful, and for some nearly impossible. Whether due to your companion's stress or anxiety, their sheer size, your schedule, or your personal circumstances, we are able to provide the care you need for your companion in the comfort of your very own home. We understand that not everyone is able to get their aging Goldendoodle into a vehicle, or the cat that won't get out from under the bed. Their stress or behavior issues don't make them any less deserving of great medical care. </p>
+                <a href="#contact" class="link-btn">make appointment</a>
+            </div>
+    
+        </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- about section ends -->
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">Our Services</h1>
+    
+        <div class="box-container container">
+    
+        <div class="box">
+            <img src="images/stethoscope.png" alt="">
+            <h3>Examinations and Diagnosis</h3>
+            <p>Examinations and Diagnosis offer an excellent opportunity to identify the early clinical signs of disease, often before symptoms appear.</p>
+        </div>
+    
+        <div class="box">
+            <img src="images/syringe.png" alt="">
+            <h3>Vaccinations based on lifestyle</h3>
+            <p>Our clinics make it easy and affordable to keep your pet's vaccination up to date.</p>
+        </div>
+    
+        <div class="box">
+            <img src="images/pesticide.png" alt="">
+            <h3>Parasite Control</h3>
+            <p>Bug prevention is a year-round responsibility. Ask our Vetco vets how they can help keep your pet protected.</p>
+        </div>
+    
+        <div class="box">
+            <img src="images/grooming.png" alt="">
+            <h3>Grooming</h3>
+            <p>We are happy to offer both dog and cat grooming services at The Animal Clinic. Our grooming experts will brush, bathe, dry, and trim your pet with skill and precision. </p>
+        </div>
+    
+        <div class="box">
+            <img src="images/phone-call.png" alt="">
+            <h3>House call </h3>
+            <p>At Pet and Vet we understand that bringing your pets to our surgery may sometimes be difficult, both for you and for them. For this reason we are pleased to offer our unique Home Visit service.</p>
+        </div>
+    
+        <div class="box">
+            <img src="images/surgery.png" alt="">
+            <h3>Surgery</h3>
+            <p>We are a proudly independent veterinary surgery owned by caring experienced vets.</p>
+        </div>
+    
+        </div>
+    
+    </section>
+ 
+ <!-- services section ends -->
+ 
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">make appointment</h1>
+ 
+    <form>
+ 
+       <span>your name :</span>
+       <input type="text" name="name" placeholder="enter your name" class="box" required id="name">
+       <span>Pet name :</span>
+       <input type="text" name="petname" placeholder="enter your pet's name" class="box" required id="petname">
+       <span>Reason :</span>
+       <select name="reason" class="box" id="reason">
+        <option value="diagnosis">Examinations and Diagnosis</option>
+        <option value="vaccinations">Vaccinations</option>
+        <option value="parasitecontrol">Parasite Control</option>
+        <option value="Grooming">Grooming</option>
+        <option value="House Call">House Call</option>
+        <option value="Surgery">Surgery</option>
+       </select>
+       <span>your number :</span>
+       <input type="number" name="number" placeholder="enter your number" class="box" required id="number">
+       <span>appointment date :</span>
+       <input type="datetime-local" name="date" class="box" required id="date">
+       <button type="button" name="button" id="btn" class="box" onClick="sendData()" style="color:rgb(48, 189, 147);"">Book Appointment</button>
+
+        <!-- <input type="submit" value="make appointment" name="submit" class="link-btn" id="makeapp" onClick="getData()">
+       <input type="submit" value="make appointment" name="submit" class="link-btn" id="makeapp" onClick="findData()"> -->
+    </form>  
+ 
+ </section>
+ 
+
+
+ <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container container">
+ 
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <p>+230 5953-3232</p>
+          <p>+230 2131-2321</p>
+       </div>
+       
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>Tranquebar, Port Louis</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>00:07am to 10:00pm</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <p>petandvet@gmail.com</p>
+          <p>petandvet2@gmail.com</p>
+       </div>
+ 
+    </div>
+ 
+ 
+ </section>
+ 
+ <!-- footer section ends -->
+    
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
