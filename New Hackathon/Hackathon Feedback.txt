@@ -1,0 +1,11 @@
+Animal Clinic appointments.
+Website looks excellent, very good & proffesional design!
+Sticky transparent navbar does not look good when above page text.
+Basic Vanilla javascript, dom manipulation.
+You update information in the database successfully and thats very good !
+On appointment button click we have an onclick in the html and an event listener in the main.js.
+No point in having two functions tied to the same button in different ways.
+Also the customer can choose any date he wants (what if the time slot is taken?) the button onclick alerts "Appointment Booked" regardless of the outcome of the booking.
+I think this is an app with great potential and I encourage you to keep making it better !
+Good work!
+
